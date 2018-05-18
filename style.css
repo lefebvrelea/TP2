@@ -1,13 +1,34 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Noto Sans', sans-serif;
+    margin:110px 0px 0px 0px;
+}
+::-moz-selection {
+  color: white;
+  background: #505050;
+}
+
+::selection {
+ color: white;
+  background: #505050;
+} 
 #container
 {
-	margin: 0 30px;
-	background: #fff;
+	margin: 0px;
 }
 
 #header
 {
-	background: #ccc;
+	background:  #C70039;
 	padding: 20px;
+    color:white;
+    position:fixed;
+    top:0px;
+    display: block;
+    left: 0;
+    z-index: 2000;
+    right: 0;
+    margin: 0px;
 }
 
 #header h1 { margin: 0; }
@@ -48,14 +69,10 @@
 	clear: left;
 	padding: 20px;
 	margin: 20px;
-	-webkit-border-radius: 18px;
-	border-radius: 18px;
-	-webkit-box-shadow: 0px 0px 6px #000000;
-	box-shadow: 0px 0px 6px #000000;
-	background-image: -webkit-gradient(linear, left top, right top, from(#d6e1ff), to(#dbffe7));
-	background-image: -webkit-linear-gradient(left, #d6e1ff, #dbffe7);
-	background-image: linear-gradient(left, #d6e1ff, #dbffe7);
-	-webkit-background-clip: padding-box;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+    background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	background-clip: padding-box;
 	opacity: 0.83;
 }
@@ -73,18 +90,12 @@
 	width: 40%;
 	padding: 20px;
 	margin: 20px;
-	-webkit-border-radius: 18px;
-	border-radius: 18px;
-	-webkit-box-shadow: 0px 0px 6px #000000;
-	box-shadow: 0px 0px 6px #000000;
-	background-image: -webkit-gradient(linear, left top, right top, from(#d6e1ff), to(#dbffe7));
-	background-image: -webkit-linear-gradient(left, #d6e1ff, #dbffe7);
-	background-image: linear-gradient(left, #d6e1ff, #dbffe7);
-	-webkit-background-clip: padding-box;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: #fff;
 	background-clip: padding-box;
 	opacity: 0.83;
 }
-
 #footer
 {
 	clear: both;
@@ -92,4 +103,13 @@
 	text-align: right;
 	padding: 20px;
 	height: 1%;
+    margin-top: 28px;
+}
+a {
+    text-decoration: none;
+    color: #C70039 ;
+}
+a:hover {
+    text-decoration: underline;
+    color: #C70039 ;
 }
